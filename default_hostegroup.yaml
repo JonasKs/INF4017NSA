@@ -1,0 +1,12 @@
+#File: /usr/share/foreman/config/settings.plugins.d/default_hostgroup.yaml 
+#If edited, restart your apache2 service (or foreman). 
+#Check if new file is correctly generated in in /etc/foreman/plugins/default_hostgroup.yaml
+---
+:default_hostgroup:
+  :facts_map:
+    "storage":
+        "hostname": "storage-*"
+    "dev":
+        "hostname": "dev-*"
+    "comp":
+      "hostname": "comp-*"
